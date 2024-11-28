@@ -1,0 +1,218 @@
+@media print {
+  .blog *,
+  .blog *:before,
+  .blog *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .blog a,
+  .blog a:visited {
+    text-decoration: underline;
+  }
+
+  .blog a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .blog abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .blog a[href^="#"]:after,
+  .blog a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  .blog pre,
+  .blog blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  .blog thead {
+    display: table-header-group;
+  }
+
+  .blog tr,
+  .blog img {
+    page-break-inside: avoid;
+  }
+
+  .blog img {
+    max-width: 100% !important;
+  }
+
+  .blog p,
+  .blog h2,
+  .blog h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .blog h2,
+  .blog h3 {
+    page-break-after: avoid;
+  }
+}
+
+.blog pre,
+.blog code {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.blog pre {
+  padding: .5rem;
+  line-height: 1.25;
+  overflow-x: scroll;
+}
+
+.blog a,
+.blog a:visited {
+  color: #3498db;
+}
+
+.blog a:hover,
+.blog a:focus,
+.blog a:active {
+  color: #2980b9;
+}
+
+.blog .modest-no-decoration {
+  text-decoration: none;
+}
+
+.blog html {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 32rem) and (max-width: 48rem) {
+  .blog html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  .blog html {
+    font-size: 16px;
+  }
+}
+
+.blog body {
+  line-height: 1.85;
+}
+
+.blog p,
+.blog .modest-p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.blog h1,
+.blog .modest-h1,
+.blog h2,
+.blog .modest-h2,
+.blog h3,
+.blog .modest-h3,
+.blog h4,
+.blog .modest-h4 {
+  margin: 1.414rem 0 .5rem;
+  font-weight: inherit;
+  line-height: 1.42;
+}
+
+.blog h1,
+.blog .modest-h1 {
+  margin-top: 0;
+  font-size: 3.998rem;
+}
+
+.blog h2,
+.blog .modest-h2 {
+  font-size: 2.827rem;
+}
+
+.blog h3,
+.blog .modest-h3 {
+  font-size: 1.999rem;
+}
+
+.blog h4,
+.blog .modest-h4 {
+  font-size: 1.414rem;
+}
+
+.blog h5,
+.blog .modest-h5 {
+  font-size: 1.121rem;
+}
+
+.blog h6,
+.blog .modest-h6 {
+  font-size: .88rem;
+}
+
+.blog small,
+.blog .modest-small {
+  font-size: .707em;
+}
+
+/* https://github.com/mrmrs/fluidity */
+
+.blog img,
+.blog canvas,
+.blog iframe,
+.blog video,
+.blog svg,
+.blog select,
+.blog textarea {
+  max-width: 100%;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+
+@import url(http://fonts.googleapis.com/css?family=Arimo:700,700italic);
+
+html {
+  font-size: 18px;
+}
+
+/* body {
+  color: #444;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 48rem;
+  line-height: 1.45;
+  padding: .25rem;
+} */
+
+.blog h1,
+.blog h2,
+.blog h3,
+.blog h4,
+.blog h5,
+.blog h6 {
+  font-family: Arimo, Helvetica, sans-serif;
+}
+
+.blog h1,
+.blog h2,
+.blog h3 {
+  border-bottom: 2px solid #fafafa;
+  margin-bottom: 1.15rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+.blog blockquote {
+  border-left: 8px solid #fafafa;
+  padding: 1rem;
+}
+
+.blog pre,
+.blog code {
+  background-color: #fafafa;
+}
